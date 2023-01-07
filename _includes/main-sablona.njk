@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>{{ title }}</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__logo"><a href="/"><img class="header__img" src="/images/logo.png" alt="Studio Sarah" /></a></div>
+        <input type="checkbox" class="header__check" id="check">
+        <label for="check" class="header__toggler">☰ Menu</label>
+      
+        <ul class="header__menu">
+          <li class="header__list"><a class="header__link" href="/">Úvod</a></li>
+          <li class="header__list"><a class="header__link" href="/kurzy/">Kurzy</a></li>
+          <li class="header__list"><a class="header__link" href="/galerie/">Galerie</a></li>
+          <li class="header__list"><a class="header__link" href="/kontakt/">Kontakt</a></li>
+        </ul>
+    </header>
+
+    <main class="main">
+        {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">Tato stránka byla vytvořena jako závěrečný projekt v kurzu Staň se Kóderkou, Czechitas.</p>
+      <p class="footer__text">© 2022 Klára Ročková</p>
+    </footer>
+</body>
+</html>
