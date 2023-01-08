@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
       // jako šablonovací jazyk zvolíme Nunjucks
       markdownTemplateEngine: "njk",
       htmlTemplateEngine: "njk",
-      dataTemplateEngine: "njk",
+      dataTemplateEngine: "njk"
     }
   };
   
